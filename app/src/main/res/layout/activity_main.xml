@@ -9,37 +9,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="105dp"
+        android:paddingLeft="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="12dp"
+            android:text="Gib deine Matrikelnummer ein" />
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:background="#29B124"
+            android:onClick="onClick"
+            android:text="Abschicken" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="30dp"
+            android:text="Aufgabe 2.2" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="235dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="30dp"
+            android:text="Aufgabe 2.3" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
